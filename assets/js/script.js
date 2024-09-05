@@ -1,3 +1,29 @@
-console.log(classesWoW)
-
-
+function search() {
+  // Esta função é responsável por lidar com a funcionalidade de pesquisa.
+  // Obtém uma referência ao elemento de seção HTML com o ID "searchResults".
+  let section = document.getElementById('searchResults');
+  // Inicializa uma string vazia para armazenar os resultados da pesquisa em HTML.
+  let results = '';
+  // Itera sobre cada item de dados no array professionsWow.
+  for (let data of professionWow) {
+    // Concatena o código HTML para um único item de resultado de pesquisa à string results.
+    results += `
+    <div class="itemResult">
+      <div class="itemImg">
+        <img src="${data.img}">
+      </div>
+      <div class="itemResultInfo">
+        <div class="title">
+          <h2>${data.title}</h2>
+        </div>
+        <div class="description"> 
+          <p>${data.description}</p>
+        </div>
+        <a href="https://www.wowhead.com/pt/skills/professions" target="_blank">Ver mais</a>
+      </div>
+    </div>
+    `
+  }
+  // Define o conteúdo HTML interno da seção de resultados de pesquisa com o HTML gerado.
+  section.innerHTML = results;
+}
