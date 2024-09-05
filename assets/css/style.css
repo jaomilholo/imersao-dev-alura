@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* #121214 */
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  color: #FFF;
+  background-color:  #261c25 ;
+  background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt281d73c8970a411e/653c204282016a6e467e8ae8/RingingDeeps.webp?w);
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Space Grotesk", sans-serif;
+}
+header, main {
+  justify-content: center;
+  display: flex;
+
+}
+header {
+  width: 100vw; 
+  height: 290px;  
+  /* background-color: #17171A; */
+  /* background-image: url(https://wow.zamimg.com/images/content/short-headers/retail/categories/professions.jpg); */
+  /* background-image: url(https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt4d0b56ef56f45ce1/653c20155ce67823d7b23821/Hallowfall.webp?); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  width: 1216px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  & h1{
+    font-size: 40px;
+    margin-bottom: 48px;
+    color: #FFF;
+  }
+  & .inputSearch {
+    opacity: 0.8;
+    background-color: rgba(64, 47, 46, 0.95);
+    width: 100%;
+    height: 64px;
+    border-radius: 8px;
+    display: flex;
+    & span, button {
+      color: #FFF;
+      height: 100%;
+      font-size: 26px;
+      padding: 16px 16px 16px 24px;
+    }
+    & input {
+      color: #FFF;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      flex-grow: 1;
+      height: 100%;
+      font-size: 20px;
+    }
+  }
+}
+
+.searchResults {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  & .itemResult {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height:380px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgba(64, 47, 46, 0.95);
+    & .itemImg  img{
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position:center right;
+    }
+
+    & .itemResultInfo{
+      width: 100%;
+      height: 160px;
+      padding: 10px 15px;
+      & .description {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      & .title {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+        
+        & h2{
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) and (max-width :834px) {
+  header {
+    height: 140px;
+    width: 100%;
+    & .nav {
+      width: 90%;
+      text-align: center;
+      & h1{
+        margin-bottom: 4px;
+        font-size: 28px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .searchResults {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+    
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+    & .itemResult{
+      width: 100%;
+      margin-bottom: 10px;
+
+    }
+  }
+
+  footer {
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 834px) and (max-width :1024px) {
+
+  header {
+    & .nav {
+      width: 600px;
+      & h1{
+        font-size: 35px;
+      }
+    }
+  }
+
+  .container{ 
+    width: 100vw;
+  }
+  .searchResults {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+
+  footer {
+    font-size: 14px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+}
+
