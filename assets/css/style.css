@@ -87,6 +87,9 @@ header {
     }
   }
 }
+.errorText {
+  text-align: center;
+}
 
 .searchResults {
   margin-top: 40px;

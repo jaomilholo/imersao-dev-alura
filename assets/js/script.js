@@ -5,7 +5,7 @@ function search() {
   let inputSearch = document.getElementById('inputSearch').value
   
   if ( !inputSearch ){
-    section.innerHTML = '<p> Nada foi encontrado</p>'
+    section.innerHTML = '<p class="errorText container"> Nada foi encontrado</p>'
     return
   }
 
@@ -40,7 +40,7 @@ function search() {
     }
   }
   if (!results) {
-    section.innerHTML = '<p>Nada foi encontrado. Você nao busco por uma profissão</p>'
+    section.innerHTML = '<p class="errorText container">Nada foi encontrado. Procure por uma profissão ou pelo tipo da mesma</p>'
     return
   }
   // Define o conteúdo HTML interno da seção de resultados de pesquisa com o HTML gerado.
