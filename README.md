@@ -34,6 +34,6 @@ Tipos = Coleta e Craft.
 
  [![LinkedIn](https://img.shields.io/badge/LinkedIn-18181b?style=for-the-badge&logo=x&logoColor=9ca3af)](https://www.linkedin.com/in/jo%C3%A3o-milholo-586057308/) 
  [![Discord](https://img.shields.io/badge/Discord-18181b?style=for-the-badge&logo=discord&logoColor=9ca3af)](https://discord.com/channels/@031jao/)
-  [![GitHub](https://img.shields.io/badge/GitHub-18181b?style=for-the-badge&logo=github&logoColor=9ca3af)](https://github.com/jaomilholo) 
+[![GitHub](https://img.shields.io/badge/GitHub-18181b?style=for-the-badge&logo=github&logoColor=9ca3af)](https://github.com/jaomilholo) 
   
   <p align="center">Feito por João Milholo.
